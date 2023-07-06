@@ -1,0 +1,198 @@
+:root {
+    --color1: rgb(9, 9, 103);
+    --color2: rgb(112, 121, 211);
+    --color3: rgb(177, 179, 201);
+    --color4: rgb(141, 7, 2);
+    --color5: rgb(0, 0, 0);
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: var(--color4);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 5px 10px;
+    text-align: right;
+    color: white;
+}
+
+.container{
+
+    max-width: 94vw;
+}
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.page-container h2 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0px;
+}
+
+.page-container h3 {
+    font-size: 2rem;
+    width: 100%;
+    padding: 1.5rem 0px;
+    margin: 0px;
+}
+
+.navbar .navbar-collapse{
+
+    justify-content: right;
+}
+.navbar li a
+{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li a:hover
+{
+    color: var(--color3)
+}
+
+.navbar li a:visited
+{
+    color: white;
+}
+
+.lang-ico
+{
+    height: 24px;
+    margin: auto 15px;
+}
+
+
+.page-container ul {
+    list-style: none
+}
+
+.page-container li::before {
+    content: "\2022";
+    color: var(--color2);
+    display: inline-block;
+    margin-left: -1em;
+    width: 1em;
+}
+
+.btn
+{
+    font-size: 1.45rem;
+}
+
+.btn-1 {
+
+    background-color: var(--color1);
+    color: white;
+}
+
+.btn-2 {
+
+    background-color: var(--color2);
+    color: white;
+}
+
+.btn-3 {
+
+    background-color: var(--color4);
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--color3);
+    color: white;
+}
+
+.input-val
+{
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+
+input.input-val
+{
+    font-size: 1.5rem;
+    border: none;
+}
+
+#simular-btn
+{
+    width: 100%;
+}
+
+
+#steps-input::-webkit-slider-thumb {
+    background: var(--color4);
+}
+table
+{
+    width: 100%;
+    margin: auto;
+    
+}
+
+.table-body tr:nth-child(odd)
+{
+    background-color: gainsboro;
+}
+
+table th{
+
+    background-color: var(--color1);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 15%;
+}
+
+table td
+{
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 15%
+}
+
+table th:first-child, table td:first-child{
+    width: 10%;
+}
+
+
+.table-container
+{
+    overflow-y: auto;
+    max-height: 75vh;
+    margin: 5rem auto 2rem auto;
+    position: relative;
+    width: 90%;
+}
+
+.table-header
+{
+    position: sticky;
+    top: 0;
+}
+
+canvas
+{
+    width: 90%;
+    margin: auto 5%;
+    border-radius: 10px;
+}

@@ -1,0 +1,227 @@
+:root {
+    --color1: rgb(9, 9, 103);
+    --color2: rgb(112, 121, 211);
+    --color3: rgb(177, 179, 201);
+    --color4: rgb(141, 7, 2);
+    --color5: rgb(0, 0, 0);
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: var(--color4);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 5px 10px;
+    text-align: right;
+    color: white;
+}
+
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.page-container h2 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0px;
+}
+
+.page-container h3 {
+    font-size: 2rem;
+    width: 100%;
+    padding: 1.5rem 0px;
+    margin: 0px;
+}
+
+.navbar .navbar-collapse{
+
+    justify-content: right;
+}
+.navbar li a
+{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li a:hover
+{
+    color: var(--color3)
+}
+
+.navbar li a:visited
+{
+    color: white;
+}
+
+.lang-ico
+{
+    height: 24px;
+    margin: auto 15px;
+}
+
+
+#intro {
+    position: relative;
+
+}
+
+#intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color5);
+    background-image: url('../img/SDWP.jfif');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 10px;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+#intro-content-layer {
+    position: absolute;
+    bottom: 0;
+    padding-top: 50px;
+    padding-left: 350px;
+    padding-bottom: 15vh;
+    width: 70%;
+    color: white;
+    font-size: 1.8rem;
+    background-color: var(--color1);
+    transform: matrix(1, 0, 1, 1, 0, 0);
+}
+
+#intro-content {
+    transform: skewX(-45deg);
+}
+
+
+#habilities {
+    padding: 2rem;
+}
+
+.page-container ul {
+    list-style: none
+}
+
+.page-container li::before {
+    content: "\2022";
+    color: var(--color2);
+    display: inline-block;
+    margin-left: -1em;
+    width: 1em;
+}
+
+.btn
+{
+    font-size: 1.45rem;
+}
+
+.btn-1 {
+
+    background-color: var(--color1);
+    color: white;
+}
+
+.btn-2 {
+
+    background-color: var(--color2);
+    color: white;
+}
+
+.btn-3 {
+
+    background-color: var(--color4);
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--color3);
+    color: white;
+}
+
+#ejemplos {
+    margin: 3rem auto;
+}
+
+#ejemplos .col-3 {
+    text-align: center;
+}
+
+#ejemplos .col-3 .btn {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+#ejemplos .col-3 h3{
+
+    border-bottom: solid 2px var(--color4);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tech-cont {
+    margin-bottom: 1rem;
+}
+
+.tech-cont p {
+    background-color: var(--color1);
+    color: white;
+    border-top: solid 5px var(--color1);
+    border-bottom: solid 20px var(--color2);
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 0px;
+    transition: 0.3s;
+}
+
+.tech-cont p:hover {
+    background-color: white;
+    color: var(--color1);
+
+}
+
+.tech-cont p::after
+{
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    width: 28px;
+    left: calc(50% - 14px);
+    background-color: transparent;
+    border-bottom: solid 0px transparent;
+    border-top: solid 14px var(--color4);
+    border-left: solid 14px transparent;
+    border-right: solid 14px transparent;
+}
+
+.tech-cont ul {
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+#xp-carrousel .carousel-item
+{
+    height: 80vh;
+}
