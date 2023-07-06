@@ -96,8 +96,15 @@ public class Laberinto {
         for(int i =0; i < 7; i ++)
         {
             laberinto.addUnaccessiblePoint(9-i,7);
-            laberinto.addUnaccessiblePoint(i,4);
+            laberinto.addUnaccessiblePoint(i,2);
+            if(i != 4 && i != 5)
+                laberinto.addUnaccessiblePoint(8-i,5);
+
         }
+
+        laberinto.addUnaccessiblePoint(0,7);
+        laberinto.addUnaccessiblePoint(1,7);
+
         
         Nodo rootNode = laberinto.getNode(0, 0);
         Nodo targetNode = laberinto.getNode(9, 9);
@@ -106,12 +113,14 @@ public class Laberinto {
 
         List<Nodo> camino;
         
-        System.out.println("\n\nCamino explorado " + explorador.getName());
+        System.out.println("\n\nCamino explorado " + explorador.getName() );
         camino = explorador.explore();
         for(Nodo nodo : camino)
         {
             System.out.println(nodo.printPathNode() + ",");
         }
+
+        System.out.println(camino.size() + " nodos explorados");
 
         camino = explorador.getRootPath();
         System.out.println("\nCamino directo "  + explorador.getName());
@@ -119,6 +128,8 @@ public class Laberinto {
         {
             System.out.println(nodo.printPathNode() + ",");
         }
+
+        System.out.println(camino.size() + " nodos recorridos");
 
     }
 
