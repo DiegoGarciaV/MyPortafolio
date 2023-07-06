@@ -16,4 +16,9 @@ public class ViewController {
     public ModelAndView amortizacion(){
         return new ModelAndView("amortizacion");
     }
+
+    @RequestMapping("/IA/search")
+    public ModelAndView search(){
+        return new ModelAndView("IA/search");
+    }
 }

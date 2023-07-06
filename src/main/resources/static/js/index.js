@@ -20,4 +20,32 @@ function loadedContent() {
 
     carroContentItem.style.top = (carroContentHeight - carroContentItemHeight) / 4 + "px";
 
+
+    // $('.tech-title').mouseenter(function() {
+
+    //     const target = $(this).attr('data-bs-target');
+    //     $(target).collapse('show');
+    // });
+      
+    // $('.tech-title').mouseleave(function() {
+        
+    //     const target = $(this).attr('data-bs-target');
+    //     $(target).collapse('hide');
+    // });
+
+    const titles = document.querySelectorAll('.tech-title');
+
+    titles.forEach((title,index,array) => {
+
+        title.addEventListener('mouseover',(event) => {
+            const target = event.target.getAttribute('data-bs-target');
+            $(target).collapse('show');
+        });
+
+        title.addEventListener('mouseleave',(event) => {
+            const target = event.target.getAttribute('data-bs-target');
+            $(target).collapse('hide');
+            console.log("Saliendo")
+        });
+    });
 }
